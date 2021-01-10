@@ -22,7 +22,7 @@ and in the processor itself.
 
 %build
 # currently fails with No rule to make target 'routines-arm-32bit.asm', needed by 'bandwidth-arm32'
-%ifarch %{arm}
+%ifarch %{arm} %{armx}
 %make_build bandwidth-arm32
 %endif
 
