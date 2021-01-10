@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:           bandwidth
 Version:        1.9.4
 Release:        1
