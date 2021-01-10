@@ -31,7 +31,7 @@ and in the processor itself.
 mv bandwidth32 %{name}
 %endif
 
-%ifarch x86_64
+%ifarch %{x86_64}
 %make_build bandwidth64 CFLAGS="%{optflags}"
 mv bandwidth64 %{name}
 %endif
