@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           bandwidth
-Version:        1.9.4
+Version:        1.11.2b
 Release:        1
 Summary:        Memory and network benchmark program
 License:        GPL-2.0
@@ -21,23 +21,11 @@ and in the processor itself.
 %setup -q
 
 %build
-# currently fails with No rule to make target 'routines-arm-32bit.asm', needed by 'bandwidth-arm32'
-%ifarch %{arm}
-%make_build bandwidth-arm32
-%endif
 
-%ifarch %{ix86}
-%make_build bandwidth32 CFLAGS="%{optflags}"
-mv bandwidth32 %{name}
-%endif
-
-%ifarch %{x86_64}
-%make_build bandwidth64 CFLAGS="%{optflags}"
-mv bandwidth64 %{name}
-%endif
+%make_build
 
 %install
-install -Dsm 755 %{name} %{buildroot}/%{_bindir}/%{name}
+install -Dsm 755 %{name}* %{buildroot}/%{_bindir}/%{name}
 
 %files
 %license GPL.txt
