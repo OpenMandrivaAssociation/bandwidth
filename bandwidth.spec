@@ -40,8 +40,7 @@ and in the processor itself.
 #%endif
 
 %install
-%make_install
-#install -Dsm 755 %{name} %{buildroot}/%{_bindir}/%{name}
+install -Dsm 755 %{name}* %{buildroot}/%{_bindir}/%{name}
 
 %files
 %license GPL.txt
