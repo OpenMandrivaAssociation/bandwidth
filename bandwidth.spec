@@ -24,21 +24,6 @@ and in the processor itself.
 
 %make_build
 
-# currently fails with No rule to make target 'routines-arm-32bit.asm', needed by 'bandwidth-arm32'
-#%ifarch %{arm}
-#%make_build bandwidth-arm32
-#%endif
-
-#%ifarch %{ix86}
-#%make_build bandwidth32 CFLAGS="%{optflags}"
-#mv bandwidth32 %{name}
-#%endif
-
-#%ifarch %{x86_64}
-#%make_build bandwidth64 CFLAGS="%{optflags}"
-#mv bandwidth64 %{name}
-#%endif
-
 %install
 install -Dsm 755 %{name}* %{buildroot}/%{_bindir}/%{name}
 
