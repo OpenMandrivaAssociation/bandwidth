@@ -2,7 +2,7 @@
 
 Name:           bandwidth
 Version:        1.11.2b
-Release:        1
+Release:        2
 Summary:        Memory and network benchmark program
 License:        GPL-2.0
 Group:          System/Benchmark
