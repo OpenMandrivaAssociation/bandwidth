@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name:           bandwidth
-Version:        1.11.2b
-Release:        2
+Version:        1.12.3
+Release:        1
 Summary:        Memory and network benchmark program
 License:        GPL-2.0
 Group:          System/Benchmark
 URL:            https://zsmith.co/bandwidth.php
-Source:         https://zsmith.co/archives/%{name}-%{version}.tar.gz
+Source:         https://zsmith.co/archives/%{name}-%{version}.tar.bz2
 
 BuildRequires:  nasm
 
