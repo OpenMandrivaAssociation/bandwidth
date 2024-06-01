@@ -21,7 +21,7 @@ and in the processor itself.
 %setup -q
 
 %build
-
+%configure
 %make_build
 
 %install
