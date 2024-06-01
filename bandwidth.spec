@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           bandwidth
-Version:        1.12.3
+Version:        1.14.10
 Release:        1
 Summary:        Memory and network benchmark program
 License:        GPL-2.0
