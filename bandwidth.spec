@@ -9,6 +9,11 @@ Group:          System/Benchmark
 URL:            https://zsmith.co/bandwidth.php
 Source:         https://zsmith.co/archives/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  nasm
 
 %description
