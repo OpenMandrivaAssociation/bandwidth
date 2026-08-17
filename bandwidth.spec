@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name:           bandwidth
-Version:        1.14.10
+Version:        1.15.1
 Release:        1
 Summary:        Memory and network benchmark program
 License:        GPL-2.0
 Group:          System/Benchmark
-URL:            https://zsmith.co/bandwidth.php
-Source:         https://zsmith.co/archives/%{name}-%{version}.tar.bz2
+URL:            http://zs3.me/bandwidth
+Source:         https://zs3.me/bandwidth-%{version}.tar.bz2
 
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -23,7 +23,7 @@ computer's memory subsystem, in the bus architecture, in the cache architecture
 and in the processor itself.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
